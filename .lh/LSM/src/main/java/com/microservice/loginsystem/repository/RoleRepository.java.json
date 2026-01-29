@@ -1,0 +1,26 @@
+{
+    "sourceFile": "LSM/src/main/java/com/microservice/loginsystem/repository/RoleRepository.java",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1769695025590,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1769695056041,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n package com.microservice.loginsystem.repository;\r\n \r\n-public class RoleRepository {\r\n+public interface RoleRepository {\r\n \r\n-}\r\n+    \r\n+} \r\n"
+                },
+                {
+                    "date": 1769695096294,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,9 @@\n package com.microservice.loginsystem.repository;\r\n \r\n-public interface RoleRepository {\r\n+import org.springframework.data.jpa.repository.JpaRepository;\r\n \r\n+import com.microservice.loginsystem.entity.Role;\r\n+\r\n+public interface RoleRepository extends JpaRepository<Role,Long> {\r\n+\r\n }\r\n"
+                }
+            ],
+            "date": 1769695025590,
+            "name": "Commit-0",
+            "content": "package com.microservice.loginsystem.repository;\r\n\r\npublic class RoleRepository {\r\n    \r\n}\r\n"
+        }
+    ]
+}

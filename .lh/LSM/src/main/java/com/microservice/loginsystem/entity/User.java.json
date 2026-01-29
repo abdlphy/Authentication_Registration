@@ -1,0 +1,26 @@
+{
+    "sourceFile": "LSM/src/main/java/com/microservice/loginsystem/entity/User.java",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1769691152039,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1769691280052,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,18 @@\n-package com.microservice.loginsystem;\r\n+package com.microservice.loginsystem.entity;\r\n \r\n+import jakarta.persistence.Entity;\r\n+import jakarta.persistence.GeneratedValue;\r\n+import jakarta.persistence.GenerationType;\r\n+import jakarta.persistence.Id;\r\n+\r\n @Entity\r\n public class User {\r\n \r\n-    @I\r\n+      @Id\r\n+      @GeneratedValue(strategy = GenerationType.IDENTITY)\r\n       private Long id;\r\n+      \r\n+      @Column(unique=true,nullable=false,length=255)\r\n+      private\r\n \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1769691326584,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n package com.microservice.loginsystem.entity;\r\n \r\n+import jakarta.persistence.Column;\r\n import jakarta.persistence.Entity;\r\n import jakarta.persistence.GeneratedValue;\r\n import jakarta.persistence.GenerationType;\r\n import jakarta.persistence.Id;\r\n@@ -10,9 +11,11 @@\n \r\n       @Id\r\n       @GeneratedValue(strategy = GenerationType.IDENTITY)\r\n       private Long id;\r\n+\r\n+      @Column(unique=true,nullable=false,length=255)\r\n+      private String email;\r\n       \r\n-      @Column(unique=true,nullable=false,length=255)\r\n-      private\r\n \r\n+\r\n }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1769691152039,
+            "name": "Commit-0",
+            "content": "package com.microservice.loginsystem;\r\n\r\n@Entity\r\npublic class User {\r\n\r\n      \r\n      private Long id;\r\n\r\n}"
+        }
+    ]
+}

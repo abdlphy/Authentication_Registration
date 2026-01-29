@@ -1,0 +1,30 @@
+{
+    "sourceFile": "LSM/src/main/java/com/microservice/loginsystem/entity/UserRole.java",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1769694076891,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1769694082489,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,25 @@\n \r\n package com.microservice.loginsystem.entity;\r\n+\r\n+@Entity\r\n+@Table(name = \"user_roles\",\r\n+        uniqueConstraints = @UniqueConstraint(columnNames = {\"user_id\", \"role_id\"}))\r\n+@Getter @Setter\r\n+@NoArgsConstructor @AllArgsConstructor\r\n+@Builder\r\n+public class UserRole {\r\n+\r\n+    @Id\r\n+    @GeneratedValue(strategy = GenerationType.IDENTITY)\r\n+    private Long id;\r\n+\r\n+    @JoinColumn(name = \"user_id\", nullable = false)\r\n+    @ManyToOne(fetch = FetchType.LAZY)\r\n+    private User user;\r\n+\r\n+    @JoinColumn(name = \"role_id\", nullable = false)\r\n+    @ManyToOne(fetch = FetchType.LAZY)\r\n+    private Role role;\r\n+\r\n+    private LocalDateTime createdAt = LocalDateTime.now();\r\n+}\r\n"
+                },
+                {
+                    "date": 1769694124970,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,20 @@\n \r\n package com.microservice.loginsystem.entity;\r\n \r\n+import jakarta.persistence.Entity;\r\n+import jakarta.persistence.GeneratedValue;\r\n+import jakarta.persistence.Id;\r\n+import jakarta.persistence.JoinColumn;\r\n+import jakarta.persistence.ManyToOne;\r\n+import jakarta.persistence.Table;\r\n+import jakarta.persistence.UniqueConstraint;\r\n+import lombok.AllArgsConstructor;\r\n+import lombok.Builder;\r\n+import lombok.Getter;\r\n+import lombok.NoArgsConstructor;\r\n+import lombok.Setter;\r\n+\r\n @Entity\r\n @Table(name = \"user_roles\", uniqueConstraints = @UniqueConstraint(columnNames = { \"user_id\", \"role_id\" }))\r\n @Getter\r\n @Setter\r\n"
+                },
+                {
+                    "date": 1769694138875,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,11 @@\n \r\n package com.microservice.loginsystem.entity;\r\n \r\n+import java.time.LocalDateTime;\r\n+\r\n import jakarta.persistence.Entity;\r\n+import jakarta.persistence.FetchType;\r\n import jakarta.persistence.GeneratedValue;\r\n import jakarta.persistence.Id;\r\n import jakarta.persistence.JoinColumn;\r\n import jakarta.persistence.ManyToOne;\r\n"
+                }
+            ],
+            "date": 1769694076891,
+            "name": "Commit-0",
+            "content": "\r\npackage com.microservice.loginsystem.entity;\r\n\r\n"
+        }
+    ]
+}

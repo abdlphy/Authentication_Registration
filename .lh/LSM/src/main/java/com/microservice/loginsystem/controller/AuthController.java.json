@@ -1,0 +1,22 @@
+{
+    "sourceFile": "LSM/src/main/java/com/microservice/loginsystem/controller/AuthController.java",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1769695258005,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1769695391227,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,13 @@\n package com.microservice.loginsystem.controller;\r\n \r\n+import org.springframework.web.bind.annotation.RequestMapping;\r\n+import org.springframework.web.bind.annotation.RestController;\r\n+\r\n+import lombok.RequiredArgsConstructor;\r\n+\r\n+@RestController\r\n+@RequestMapping(\"api/v1/auth\")\r\n+@RequiredArgsConstructor\r\n public class AuthController {\r\n \r\n }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1769695258005,
+            "name": "Commit-0",
+            "content": "package com.microservice.loginsystem.controller;\r\n\r\npublic class AuthController {\r\n\r\n}"
+        }
+    ]
+}

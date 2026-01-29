@@ -1,0 +1,26 @@
+{
+    "sourceFile": "LSM/src/main/java/com/microservice/loginsystem/dto/LoginRequest.java",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1769694695901,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1769694703360,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n package com.microservice.loginsystem.dto;\r\n-\r\n+import lombok.Data;\r\n public class LoginRequest {\r\n     private String email;\r\n     private String password;\r\n }\r\n"
+                },
+                {
+                    "date": 1769694712163,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n package com.microservice.loginsystem.dto;\r\n \r\n import lombok.Data;\r\n \r\n+@Data\r\n public class LoginRequest {\r\n     private String email;\r\n     private String password;\r\n }\r\n"
+                }
+            ],
+            "date": 1769694695901,
+            "name": "Commit-0",
+            "content": "package com.microservice.loginsystem.dto;\r\n\r\npublic class LoginRequest {\r\n    \r\n}\r\n"
+        }
+    ]
+}

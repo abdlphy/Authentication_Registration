@@ -1,0 +1,26 @@
+{
+    "sourceFile": "LSM/src/main/java/com/microservice/loginsystem/dto/LoginResponse.java",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1769694732832,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1769694738627,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n package com.microservice.loginsystem.dto;\r\n \r\n public class LoginResponse {\r\n-\r\n+private String accessToken;\r\n+    private String refreshToken;\r\n }\r\n"
+                },
+                {
+                    "date": 1769694746331,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,9 @@\n package com.microservice.loginsystem.dto;\r\n \r\n+import lombok.Data;\r\n+\r\n+@Data\r\n public class LoginResponse {\r\n     private String accessToken;\r\n     private String refreshToken;\r\n }\r\n"
+                }
+            ],
+            "date": 1769694732832,
+            "name": "Commit-0",
+            "content": "package com.microservice.loginsystem.dto;\r\n\r\npublic class LoginResponse {\r\n    \r\n}\r\n"
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "sourceFile": "LSM/src/main/java/com/microservice/loginsystem/dto/RegisterRequest.java",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1769694924107,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1769694933227,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,8 @@\n package com.microservice.loginsystem.dto;\r\n \r\n public class RegisterRequest {\r\n-\r\n+ private String email;\r\n+    private String username;\r\n+    private String phone;\r\n+    private String password;\r\n }\r\n"
+                },
+                {
+                    "date": 1769694939086,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,9 @@\n package com.microservice.loginsystem.dto;\r\n \r\n+import lombok.Data;\r\n+\r\n+@Data\r\n public class RegisterRequest {\r\n     private String email;\r\n     private String username;\r\n     private String phone;\r\n"
+                }
+            ],
+            "date": 1769694924107,
+            "name": "Commit-0",
+            "content": "package com.microservice.loginsystem.dto;\r\n\r\npublic class RegisterRequest {\r\n\r\n}\r\n"
+        }
+    ]
+}
